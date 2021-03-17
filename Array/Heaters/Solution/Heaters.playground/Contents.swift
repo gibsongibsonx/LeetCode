@@ -18,3 +18,12 @@ class Solution {
         return r
     }
 }
+
+func tests() {
+    let s = Solution()
+    assert(s.findRadius([1,2,3], [2]) == 1)
+    assert(s.findRadius([1,2,3,4], [1,4]) == 1)
+    assert(s.findRadius([1,5], [2]) == 3)
+}
+
+tests()
