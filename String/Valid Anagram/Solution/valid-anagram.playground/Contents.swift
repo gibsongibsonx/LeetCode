@@ -9,3 +9,11 @@ class Solution {
         return sChars == tChars
     }
 }
+
+func tests() {
+    let s = Solution()
+    assert(s.isAnagram("anagram", "nagaram") == true)
+    assert(s.isAnagram("rat", "car") == false)
+}
+
+tests()
