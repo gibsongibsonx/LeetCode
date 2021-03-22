@@ -23,3 +23,12 @@ class Solution {
         return count
     }
 }
+
+func tests() {
+    let s = Solution()
+    assert(s.minDeletions("aab") == 0) // good
+    assert(s.minDeletions("aaabbbcc") == 2) // good
+    assert(s.minDeletions("ceabaacb") == 2) // good
+}
+
+tests()
