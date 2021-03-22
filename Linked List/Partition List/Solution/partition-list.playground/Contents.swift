@@ -32,3 +32,12 @@ class Solution {
         return prevgag.next
     }
 }
+
+func tests() {
+    let s = Solution()
+    for item in [1,4,3,2,5,2] {
+        assert((s.partition(.init(item), 3) != nil))
+    }
+    
+}
+tests()
