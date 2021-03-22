@@ -1,4 +1,4 @@
-### [1647. Minimum Deletions to Make Character Frequencies Unique] (https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/)
+### [1647. Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/)
 
 A string ```s``` is called **good** if there are no two different characters in ```s``` that have the same **frequency**.
 
