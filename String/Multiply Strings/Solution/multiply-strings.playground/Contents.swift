@@ -28,11 +28,3 @@ class Solution {
         
     }
 }
-
-func tests() {
-    let s = Solution()
-    assert(s.multiply("2", "3") == "6")
-    assert(s.multiply("123", "456") == "56088")
-}
-
-tests()
