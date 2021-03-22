@@ -31,8 +31,8 @@ class Solution {
 
 func tests() {
     let s = Solution()
-    assert(s.multiply("2", "3") == "6")
-    assert(s.multiply("123", "456") == "56088")
+    assert(s.multiply("2", "3") == "6") // true
+    assert(s.multiply("123", "456") == "56088") // true
 }
 
 tests()
