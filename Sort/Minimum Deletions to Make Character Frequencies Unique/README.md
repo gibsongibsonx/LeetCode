@@ -70,3 +70,6 @@ func tests() {
 
 tests()
 ```
+
+
+#### Here is the link to the [discuss](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/discuss/1122198/Swift-solution)
