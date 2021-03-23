@@ -23,3 +23,12 @@ class Solution {
         return true
     }
 }
+
+func tests() {
+    let s = Solution()
+    assert(s.isIsomorphic("egg", "add")) // good
+    assert(s.isIsomorphic("foo", "bar") == false) // good
+    assert(s.isIsomorphic("paper", "title")) // good
+}
+
+tests()
