@@ -32,3 +32,9 @@ class Solution {
     }
 }
 
+func tests() {
+    let s = Solution()
+    assert(s.partitionLabels("ababcbacadefegdehijhklij") == [9,7,8]) // good
+}
+
+tests()

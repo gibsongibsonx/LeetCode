@@ -89,4 +89,4 @@ func tests() {
 tests()
 ```
 
-[LeetCode Discuss](https://leetcode.com/problems/sliding-window-maximum/discuss/1122916/swift-sliding-window-maximum)
+**[LeetCode Discuss](https://leetcode.com/problems/sliding-window-maximum/discuss/1122916/swift-sliding-window-maximum)**
