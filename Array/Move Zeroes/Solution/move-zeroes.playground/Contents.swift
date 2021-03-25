@@ -14,3 +14,16 @@ class Solution {
         }
     }
 }
+
+func tests() {
+    let s = Solution()
+    var example1 = [0,1,0,3,12]
+    s.moveZeroes(&example1)
+    assert(example1 == [1,3,12,0,0]) // good
+    
+    var example2 = [0]
+    s.moveZeroes(&example2)
+    assert(example2 == [0]) // good
+}
+
+tests()
