@@ -15,3 +15,11 @@ class Solution {
         return arr[n]
     }
 }
+
+func tests() {
+    let s = Solution()
+    assert(s.numTrees(3) == 5)
+    assert(s.numTrees(1) == 1)
+}
+
+tests()
