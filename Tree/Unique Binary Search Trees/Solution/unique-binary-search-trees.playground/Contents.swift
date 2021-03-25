@@ -20,8 +20,8 @@ class Solution {
 
 func tests() {
     let s = Solution()
-    assert(s.numTrees(3) == 5)
-    assert(s.numTrees(1) == 1)
+    assert(s.numTrees(3) == 5) // good
+    assert(s.numTrees(1) == 1) // good
 }
 
 tests()
