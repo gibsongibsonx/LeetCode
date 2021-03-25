@@ -45,3 +45,27 @@ Output: "bob like even not does Alice"
 s contains English letters (upper-case and lower-case), digits, and spaces ' '.
 There is at least one word in s.
 ```
+
+### Solution
+```swift
+class Solution {
+    func reverseWords(_ s: String) -> String {
+        s.split(separator: " ").reversed().joined(separator: " ")
+    }
+}
+```
+### Tests
+```swift
+func tests() {
+    let s = Solution()
+    assert(s.reverseWords("the sky is blue") == "blue is sky the") // good
+    assert(s.reverseWords("  hello world  ") == "world hello") // good
+    assert(s.reverseWords("a good   example") == "example good a") // good
+    assert(s.reverseWords("  Bob    Loves  Alice   ") == "Alice Loves Bob") // good
+    assert(s.reverseWords("Alice does not even like bob") == "bob like even not does Alice") // good
+}
+
+tests()
+```
+
+##### [Discuss](https://leetcode.com/problems/reverse-words-in-a-string/discuss/1126820/Swift%3A-Reverse-Words-in-a-String)
