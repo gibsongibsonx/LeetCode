@@ -2,6 +2,8 @@ import Foundation
 
 // https://leetcode.com/problems/unique-binary-search-trees/
 
+// Given an integer n, return the number of structurally unique BST's (binary search trees) which has exactly n nodes of unique values from 1 to n.
+
 class Solution {
     func numTrees(_ n: Int) -> Int {
         guard n > 1 else { return 1 }
