@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 class Solution {
     func moveZeroes(_ nums: inout [Int]) {
