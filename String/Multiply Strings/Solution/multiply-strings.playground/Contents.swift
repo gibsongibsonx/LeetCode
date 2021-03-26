@@ -1,5 +1,7 @@
 import Foundation
 
+// https://leetcode.com/problems/multiply-strings/
+
 class Solution {
     func multiply(_ num1: String, _ num2: String) -> String {
         let num1 = num1.reversed(), num2 = num2.reversed()
