@@ -24,3 +24,18 @@ Output: []
 #### Constraints:
 The number of nodes in the tree is in the range ```[0, 2000]```.
 ```-1000 <= Node.val <= 1000```
+
+### Soltution:
+```swift
+class Solution {
+    func levelOrderBottom(_ root: TreeNode?) -> [[Int]] {
+        guard let node = root else { return [] }
+        var result = [[Int]](), tree = [node]
+        while !tree.isEmpty {
+            result.insert(tree.map { $0.val }, at: 0)
+            tree = tree.flatMap { [$0.left, $0.right] }.compactMap{ $0 }
+        }
+        return result
+    }
+}
+```
