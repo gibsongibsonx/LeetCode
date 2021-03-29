@@ -106,3 +106,6 @@ extension ListNode: Equatable {
     }
 }
 ```
+
+#### [Discuss](https://leetcode.com/problems/merge-two-sorted-lists/discuss/1132854/Swift%3A-Merge-Two-Sorted-Lists-%2B-Tests)
+
