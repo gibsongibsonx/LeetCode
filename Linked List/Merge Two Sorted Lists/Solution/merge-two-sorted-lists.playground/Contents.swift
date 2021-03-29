@@ -8,6 +8,18 @@ public class ListNode {
     public init() { self.val = 0; self.next = nil; }
     public init(_ val: Int) { self.val = val; self.next = nil; }
     public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
+    
+    // An additional initializer that can be used to implement nodes from an array
+    public init?(_ array: [Int]) {
+        guard !array.isEmpty else { return nil }
+        self.val = array[0]
+        var prev: ListNode = self
+        for i in 1..<array.count {
+            let new = ListNode(array[i])
+            prev.next = new
+            prev = new
+        }
+    }
 }
 
 class Solution {
