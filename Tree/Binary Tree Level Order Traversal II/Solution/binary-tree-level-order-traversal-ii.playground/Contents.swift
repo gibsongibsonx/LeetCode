@@ -1,5 +1,12 @@
 import UIKit
 
+// https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
+
+/*
+ Given the root of a binary tree, return the bottom-up level order traversal of its nodes' values.
+ (i.e., from left to right, level by level from leaf to root).
+ */
+
 public class TreeNode {
     public var val: Int
     public var left: TreeNode?
@@ -10,6 +17,27 @@ public class TreeNode {
         self.val = val
         self.left = left
         self.right = right
+    }
+    
+    // Making an additional initializer from an array of integers
+    public init?(_ array: [Int?]) {
+        var values = array
+        guard !values.isEmpty, let head = values.removeFirst() else { return nil }
+        
+        val = head; left = nil; right = nil
+        
+        var queue = [self]
+        while !queue.isEmpty {
+            let node = queue.removeFirst()
+            if !values.isEmpty, let val = values.removeFirst() {
+                node.left = TreeNode(val)
+                queue.append(node.left!)
+            }
+            if !values.isEmpty, let val = values.removeFirst() {
+                node.right = TreeNode(val)
+                queue.append(node.right!)
+            }
+        }
     }
 }
 
