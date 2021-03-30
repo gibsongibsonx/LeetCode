@@ -26,3 +26,45 @@ class Solution {
         return Double(arr[x-1] + arr[x]) / 2
     }
 }
+
+import XCTest
+
+// Executed 5 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+class Tests: XCTestCase {
+    private let s = Solution()
+    
+    func testExaple1() {
+        //  Input: nums1 = [1,3], nums2 = [2]
+        //  Output: 2.00000
+        //  Explanation: merged array = [1,2,3] and median is 2.
+        XCTAssertEqual(s.findMedianSortedArrays([1,3], [2]), 2.00000)
+    }
+    
+    func testExample2() {
+        //  Input: nums1 = [1,2], nums2 = [3,4]
+        //  Output: 2.50000
+        //  Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
+        XCTAssertEqual(s.findMedianSortedArrays([1,2], [3,4]), 2.50000)
+    }
+    
+    func testExample3() {
+        //  Input: nums1 = [0,0], nums2 = [0,0]
+        //  Output: 0.00000
+        XCTAssertEqual(s.findMedianSortedArrays([0,0], [0,0]), 0.00000)
+    }
+    
+    func testExample4() {
+        //  Input: nums1 = [], nums2 = [1]
+        //  Output: 1.00000
+        XCTAssertEqual(s.findMedianSortedArrays([], [1]), 1.00000)
+    }
+    
+    func testExample5() {
+        //  Input: nums1 = [2], nums2 = []
+        //  Output: 2.00000
+        XCTAssertEqual(s.findMedianSortedArrays([2], []), 2.00000)
+    }
+}
+
+Tests.defaultTestSuite.run()
+
