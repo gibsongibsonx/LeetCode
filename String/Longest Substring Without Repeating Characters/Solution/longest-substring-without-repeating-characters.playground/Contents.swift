@@ -1,5 +1,8 @@
 import Foundation
 
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/
+// Given a string s, find the length of the longest substring without repeating characters.
+
 class Solution {
     func lengthOfLongestSubstring(_ s: String) -> Int {
         var length = 0, chars = [Character]()
