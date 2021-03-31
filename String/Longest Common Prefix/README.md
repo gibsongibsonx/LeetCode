@@ -22,3 +22,19 @@ Explanation: There is no common prefix among the input strings.
 0 <= strs[i].length <= 200
 strs[i] consists of only lower-case English letters.
 ```
+
+### Solution:
+```swift
+class Solution {
+    func longestCommonPrefix(_ strs: [String]) -> String {
+        if strs.isEmpty { return "" }
+        var common = strs[0]
+        strs.forEach({
+            while !$0.hasPrefix(common) {
+                common = String(common.dropLast())
+            }
+        })
+        return common
+    }
+}
+```
