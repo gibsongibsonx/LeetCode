@@ -23,3 +23,20 @@ class Solution {
         return visit[0][0]
     }
 }
+
+import XCTest
+
+//      Executed 5 tests, with 0 failures (0 unexpected) in 0.080 (0.082) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    
+    func testExample1() { XCTAssert(s.isMatch("aa", "a") == false) }
+    func testExample2() { XCTAssert(s.isMatch("aa", "a*") == true) }
+    func testExample3() { XCTAssert(s.isMatch("ab", ".*") == true) }
+    func testExample4() { XCTAssert(s.isMatch("aab", "c*a*b") == true) }
+    func testExample5() { XCTAssert(s.isMatch("mississippi", "mis*is*p*.") == false) }
+    
+}
+
+Tests.defaultTestSuite.run()
