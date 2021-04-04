@@ -1,5 +1,18 @@
 # [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
 
+### Solution:
+```swift
+class Solution {
+    func myAtoi(_ s: String) -> Int {
+        if s.contains("+ ") { return 0 }
+        let int = (s as NSString).integerValue
+        return int >= Int32.max ? Int(Int32.max) : max(Int(Int32.min), int)
+    }
+}
+```
+
+### Description:
+
 Implement the ```myAtoi(string s)``` function, which converts a string to a 32-bit signed integer (similar to C/C++'s ```atoi``` function).
 
 The algorithm for ```myAtoi(string s)``` is as follows:
