@@ -1,5 +1,7 @@
 import Foundation
 
+// https://leetcode.com/problems/container-with-most-water/
+
 class Solution {
     func maxArea(_ height: [Int]) -> Int {
         guard height.count > 2 else { return min(height[0], height[1]) }
