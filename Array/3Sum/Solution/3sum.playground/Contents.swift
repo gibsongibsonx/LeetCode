@@ -31,3 +31,25 @@ class Solution {
         return result
     }
 }
+
+import XCTest
+
+// Executed 3 tests, with 0 failures (0 unexpected) in 0.029 (0.031) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    
+    func testExample1() {
+        XCTAssert(s.threeSum([-1,0,1,2,-1,-4]) == [[-1,-1,2],[-1,0,1]])
+    }
+    
+    func testExample2() {
+        XCTAssert(s.threeSum([]) == [])
+    }
+    
+    func testExample3() {
+        XCTAssert(s.threeSum([]) == [])
+    }
+}
+
+Tests.defaultTestSuite.run()
