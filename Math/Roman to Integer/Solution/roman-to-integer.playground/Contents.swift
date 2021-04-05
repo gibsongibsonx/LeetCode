@@ -6,11 +6,7 @@ class Solution {
         var out = 0, prev = 0
         s.forEach({
             let val = dict[$0] ?? 0
-            if val <= prev {
-                out += prev
-            } else {
-                out -= prev
-            }
+            if val <= prev { out += prev } else { out -= prev }
             prev = val
         })
         out += prev
