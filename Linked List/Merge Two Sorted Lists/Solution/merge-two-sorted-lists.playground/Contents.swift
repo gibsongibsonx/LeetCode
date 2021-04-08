@@ -4,7 +4,7 @@ import Foundation
 
 /*
  Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
-*/
+ */
 
 class Solution {
     func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
