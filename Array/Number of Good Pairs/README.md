@@ -1,5 +1,21 @@
 # [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)
 
+### Solution:
+```swift
+class Solution {
+    func numIdenticalPairs(_ nums: [Int]) -> Int {
+        var res = 0, map = [Int:Int]()
+        nums.forEach({
+            res += map[$0] ?? 0
+            map[$0,default: 0] += 1
+        })
+        return res
+    }
+}
+```
+
+### Description:
+
 <div><p>Given an array of integers&nbsp;<code>nums</code>.</p>
 
 <p>A pair&nbsp;<code>(i,j)</code>&nbsp;is called <em>good</em> if&nbsp;<code>nums[i]</code> == <code>nums[j]</code> and <code>i</code> &lt; <code>j</code>.</p>
