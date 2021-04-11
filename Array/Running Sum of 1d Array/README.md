@@ -1,5 +1,20 @@
 # [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)
 
+### Solution:
+```swift
+class Solution {
+    func runningSum(_ nums: [Int]) -> [Int] {
+        var res = [Int]()
+        for i in 0..<nums.count where !nums.isEmpty {
+            i == 0 ? res.append(nums[i]) : res.append(res[i-1] + nums[i])
+        }
+        return res
+    }
+}
+```
+
+### Description:
+
 <div><p>Given an array <code>nums</code>. We define a running sum of an array as&nbsp;<code>runningSum[i] = sum(nums[0]…nums[i])</code>.</p>
 
 <p>Return the running sum of <code>nums</code>.</p>
