@@ -12,3 +12,22 @@ class Solution {
         return res
     }
 }
+
+import XCTest
+
+// Executed 3 tests, with 0 failures (0 unexpected) in 0.031 (0.033) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    func testExample1() {
+        XCTAssertEqual(s.numIdenticalPairs([1,2,3,1,1,3]), 4) // success
+    }
+    func testExample2() {
+        XCTAssertEqual(s.numIdenticalPairs([1,1,1,1]), 6) // success
+    }
+    func testExample3() {
+        XCTAssertEqual(s.numIdenticalPairs([1,2,3]), 0) // success
+    }
+}
+
+Tests.defaultTestSuite.run()
