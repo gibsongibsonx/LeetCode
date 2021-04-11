@@ -7,19 +7,19 @@ class Solution {
         guard nums.count >= 4 else { return [] }
         
         var result = [[Int]]()
-        let sort = nums.sorted(), c = sort.count
+        let nums = nums.sorted(), count = nums.count
         
-        for i in 0..<(c - 1) where i == 0 || sort[i] != sort[i-1] {
-            for j in (i + 1)..<c where j == i + 1 || sort[j] != sort[j-1] {
-                var f = j + 1, l = c - 1
+        for i in 0..<(count - 1) where i == 0 || nums[i] != nums[i-1] {
+            for j in (i + 1)..<count where j == i + 1 || nums[j] != nums[j-1] {
+                var f = j + 1, l = count - 1
                 while f < l {
-                    let s = sort[f], e = sort[l], n = sort[i], k = sort[j]
-                    let sum = s + e + n + k
-                    if sum == target { result.append([s,e,n,k]) }
+                    let a = nums[f], b = nums[l], c = nums[i], d = nums[j]
+                    let sum = a + b + c + d
+                    if sum == target { result.append([a,b,c,d]) }
                     if sum < target {
-                        while sort[f] == s, f < c - 1 { f += 1 }
+                        while nums[f] == a, f < count - 1 { f += 1 }
                     } else {
-                        while sort[l] == e, l > j { l -= 1 }
+                        while nums[l] == b, l > j { l -= 1 }
                     }
                 }
             }
@@ -30,7 +30,7 @@ class Solution {
 
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.036 (0.038) seconds
+//      Executed 2 tests, with 0 failures (0 unexpected) in 0.032 (0.033) seconds
 
 class Tests: XCTestCase {
     private let s = Solution()
