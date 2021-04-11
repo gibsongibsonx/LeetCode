@@ -1,5 +1,26 @@
 # [1365. How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
 
+### Solution:
+```swift
+class Solution {
+    func smallerNumbersThanCurrent(_ nums: [Int]) -> [Int] {
+        var counts = Array(repeating: 0, count: 101), arr = counts, sum = 0
+        nums.map{ counts[$0] += 1 }
+        
+        for i in 1...counts.count - 1 {
+            sum += counts[i-1]
+            arr[i] = sum
+        }
+        
+        var ans = Array(repeating: 0, count: nums.count)
+        for i in 0..<nums.count { ans[i] = arr[nums[i]]}
+        return ans
+    }
+}
+```
+
+### Description:
+
 <div><p>Given the array <code>nums</code>, for each <code>nums[i]</code> find out how many numbers in the array are smaller than it. That is, for each <code>nums[i]</code> you have to count the number of valid <code>j's</code>&nbsp;such that&nbsp;<code>j != i</code> <strong>and</strong> <code>nums[j] &lt; nums[i]</code>.</p>
 
 <p>Return the answer in an array.</p>
