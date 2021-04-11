@@ -1,5 +1,17 @@
 # [1431. Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
 
+### Solution:
+```swift
+class Solution {
+    func kidsWithCandies(_ candies: [Int], _ extraCandies: Int) -> [Bool] {
+        guard let maxValue = candies.max() else { return [] }
+        return candies.map { $0 + extraCandies >= maxValue ? true : false }
+    }
+}
+```
+
+### Description:
+
 <div><p>Given the array <code>candies</code> and the integer <code>extraCandies</code>, where <code>candies[i]</code> represents the number of candies that the <strong><em>ith</em></strong> kid has.</p>
 
 <p>For each kid check if there is a way to distribute <code>extraCandies</code> among the kids such that he or she can have the <strong>greatest</strong> number of candies among them.&nbsp;Notice that multiple kids can have the <strong>greatest</strong> number of candies.</p>
