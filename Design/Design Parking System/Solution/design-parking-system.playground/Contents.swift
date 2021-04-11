@@ -1,5 +1,7 @@
 import Foundation
 
+// https://leetcode.com/problems/design-parking-system/
+
 class ParkingSystem {
     var big: Int, medium: Int, small: Int
     
