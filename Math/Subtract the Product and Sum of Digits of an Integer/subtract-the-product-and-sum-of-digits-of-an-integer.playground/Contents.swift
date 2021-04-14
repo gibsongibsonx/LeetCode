@@ -15,3 +15,20 @@ class Solution {
         return product - sum
     }
 }
+
+import XCTest
+
+//      Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.042) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    
+    func testExample1() {
+        XCTAssert(s.subtractProductAndSum(234) == 15) // success
+    }
+    func testExample2() {
+        XCTAssert(s.subtractProductAndSum(4421) == 21) // success
+    }
+}
+
+Tests.defaultTestSuite.run()
