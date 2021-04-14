@@ -1,5 +1,15 @@
 # [1773. Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/)
 
+### Solution:
+```swift
+class Solution {
+    func countMatches(_ items: [[String]], _ ruleKey: String, _ ruleValue: String) -> Int {
+        let rule = ruleKey == "type" ? 0 : (ruleKey == "color" ? 1 : 2)
+        return items.reduce(0) { $0 + ($1[rule] == ruleValue ? 1 : 0)}
+    }
+}
+```
+
 ### Description:
 
 <div><p>You are given an array <code>items</code>, where each <code>items[i] = [type<sub>i</sub>, color<sub>i</sub>, name<sub>i</sub>]</code> describes the type, color, and name of the <code>i<sup>th</sup></code> item. You are also given a rule represented by two strings, <code>ruleKey</code> and <code>ruleValue</code>.</p>
