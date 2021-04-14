@@ -17,11 +17,11 @@ class Tests: XCTestCase {
     private let s = Solution()
     func testExample1() {
         let items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]]
-        XCTAssertEqual(s.countMatches(items, "color", "silver"), 1)
+        XCTAssertEqual(s.countMatches(items, "color", "silver"), 1) // success
     }
     func testExample2() {
         let items = [["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]]
-        XCTAssertEqual(s.countMatches(items, "type", "phone"), 2)
+        XCTAssertEqual(s.countMatches(items, "type", "phone"), 2) // success
     }
 }
 
