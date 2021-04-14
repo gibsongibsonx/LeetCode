@@ -1,0 +1,28 @@
+import Foundation
+
+// https://leetcode.com/problems/count-items-matching-a-rule/
+
+class Solution {
+    func countMatches(_ items: [[String]], _ ruleKey: String, _ ruleValue: String) -> Int {
+        let rule = ruleKey == "type" ? 0 : (ruleKey == "color" ? 1 : 2)
+        return items.reduce(0) { $0 + ($1[rule] == ruleValue ? 1 : 0)}
+    }
+}
+
+import XCTest
+
+// Executed 2 tests, with 0 failures (0 unexpected) in 0.009 (0.013) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    func testExample1() {
+        let items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]]
+        XCTAssertEqual(s.countMatches(items, "color", "silver"), 1)
+    }
+    func testExample2() {
+        let items = [["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]]
+        XCTAssertEqual(s.countMatches(items, "type", "phone"), 2)
+    }
+}
+
+Tests.defaultTestSuite.run()
