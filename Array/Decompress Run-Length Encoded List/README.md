@@ -1,5 +1,18 @@
 # [1313. Decompress Run-Length Encoded List](https://leetcode.com/problems/decompress-run-length-encoded-list/)
 
+### Solution:
+```swift
+class Solution {
+    func decompressRLElist(_ nums: [Int]) -> [Int] {
+        var res = [Int]()
+        for i in 0..<(nums.count/2) {
+            for _ in 1...nums[2*i] { res.append(nums[2*i+1]) }
+        }
+        return res
+    }
+}
+```
+
 ### Description:
 
 <div><p>We are given a list <code>nums</code> of integers representing a list compressed with run-length encoding.</p>
