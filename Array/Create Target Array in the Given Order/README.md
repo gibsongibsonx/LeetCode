@@ -1,5 +1,16 @@
 # [1389. Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order/)
 
+### Solution:
+```swift
+class Solution {
+    func createTargetArray(_ nums: [Int], _ index: [Int]) -> [Int] {
+        var res = [Int]()
+        for i in 0..<nums.count { res.insert(nums[i], at: index[i]) }
+        return res
+    }
+}
+```
+
 ### Description:
 
 <div><p>Given two arrays of integers&nbsp;<code>nums</code> and <code>index</code>. Your task is to create <em>target</em> array under the following rules:</p>
