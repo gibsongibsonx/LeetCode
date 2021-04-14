@@ -1,5 +1,16 @@
 # [1678. Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/)
 
+### Solution:
+```swift
+class Solution {
+    func interpret(_ command: String) -> String {
+        if !(1...100).contains(command.count) { return "" }
+        let o = command.replacingOccurrences(of: "()", with: "o")
+        return o.replacingOccurrences(of: "(al)", with: "al")
+    }
+}
+```
+
 ### Description:
 
 <div><p>You own a <strong>Goal Parser</strong> that can interpret a string <code>command</code>. The <code>command</code> consists of an alphabet of <code>"G"</code>, <code>"()"</code> and/or <code>"(al)"</code> in some order. The Goal Parser will interpret <code>"G"</code> as the string <code>"G"</code>, <code>"()"</code> as the string <code>"o"</code>, and <code>"(al)"</code> as the string <code>"al"</code>. The interpreted strings are then concatenated in the original order.</p>
