@@ -1,5 +1,38 @@
 # [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)
 
+[Discuss](https://leetcode.com/problems/divide-two-integers/discuss/1163652/Swift%3A-Divide-Two-Integers)
+
+### Solution:
+```swift
+class Solution {
+    func divide(_ dividend: Int, _ divisor: Int) -> Int {
+        let negative = (dividend < 0) == (divisor < 0)
+        var _dividend = Int64(abs(dividend))
+        let _divisor = Int64(abs(divisor))
+        
+        var count = 0, t = 1, divisor = _divisor
+        
+        while divisor < _dividend {
+            divisor = divisor << 1
+            t = t << 1
+        }
+        
+        while divisor > 0, divisor > _divisor {
+            while divisor > _dividend {
+                divisor = divisor >> 1
+                t = t >> 1
+            }
+            _dividend -= divisor
+            count += t
+        }
+        if _dividend == _divisor { count += 1 }
+        return negative ? min(count, Int(Int32.max)) : max(-count, Int(Int32.min))
+    }
+}
+```
+
+### Description:
+
 <div><p>Given two integers <code>dividend</code> and <code>divisor</code>, divide two integers without using multiplication, division, and mod operator.</p>
 
 <p>Return the quotient after dividing <code>dividend</code> by <code>divisor</code>.</p>

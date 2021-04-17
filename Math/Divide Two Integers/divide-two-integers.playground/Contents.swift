@@ -4,7 +4,7 @@ import Foundation
 
 class Solution {
     func divide(_ dividend: Int, _ divisor: Int) -> Int {
-        let positive = (dividend < 0) == (divisor < 0)
+        let negative = (dividend < 0) == (divisor < 0)
         var _dividend = Int64(abs(dividend))
         let _divisor = Int64(abs(divisor))
         
@@ -24,7 +24,7 @@ class Solution {
             count += t
         }
         if _dividend == _divisor { count += 1 }
-        return positive ? min(count, Int(Int32.max)) : max(-count, Int(Int32.min))
+        return negative ? min(count, Int(Int32.max)) : max(-count, Int(Int32.min))
     }
 }
 
