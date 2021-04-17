@@ -1,5 +1,29 @@
 # [665. Non-decreasing Array](https://leetcode.com/problems/non-decreasing-array/)
 
+### Solution:
+```swift
+class Solution {
+    func checkPossibility(_ nums: [Int]) -> Bool {
+        guard nums.count > 2 else { return true }
+        var modify = 0, n = nums.count - 1
+        while n != 0 {
+            if nums[n] < nums[n-1] {
+                modify += 1
+                if n > 1,
+                   n < nums.count - 1,
+                   nums[n+1] < nums[n-1],
+                   nums[n-2] > nums[n] { return false }
+            }
+            if modify > 1 { return false }
+            n -= 1
+        }
+        return true
+    }
+}
+```
+
+### Description:
+
 <div><p>Given an array <code>nums</code> with <code>n</code> integers, your task is to check if it could become non-decreasing by modifying <strong>at most one element</strong>.</p>
 
 <p>We define an array is non-decreasing if <code>nums[i] &lt;= nums[i + 1]</code> holds for every <code>i</code> (<strong>0-based</strong>) such that (<code>0 &lt;= i &lt;= n - 2</code>).</p>
