@@ -1,5 +1,23 @@
 # [1017. Convert to Base -2](https://leetcode.com/problems/convert-to-base-2)
 
+### Solution:
+```swift
+class Solution {
+    func baseNeg2(_ n: Int) -> String {
+        if n == 0 { return n.description }
+        var chs = [Character]()
+        var n = n
+        while n != 0 {
+            chs.append(contentsOf: String(n & 1))
+            n = -(n >> 1)
+        }
+        return String(chs.reversed())
+    }
+}
+```
+
+### Description:
+
 <div><p>Given a number <code>n</code>, return a string consisting of <code>"0"</code>s and <code>"1"</code>s&nbsp;that represents its value in base <code><strong>-2</strong></code>&nbsp;(negative two).</p>
 
 <p>The returned string must have no leading zeroes, unless the string is <code>"0"</code>.</p>
