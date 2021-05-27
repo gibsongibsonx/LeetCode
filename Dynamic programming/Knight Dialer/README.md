@@ -1,5 +1,35 @@
 # [935. Knight Dialer](https://leetcode.com/problems/knight-dialer)
 
+### Solution:
+```swift
+class Solution {
+    private let mode = 1e9 + 7 // 1000000007
+    private let moves = [[4,6],[6,8],[7,9],[4,8],[3,9,0],[],[1,7,0],[2,6],[1,3],[2,4]]
+    
+    func knightDialer(_ n: Int) -> Int {
+        var res = 0
+        let arr = Array(repeating: -1, count: 10)
+        var visit = Array(repeating: arr, count: n+1)
+        for i in 0..<10 {
+            res = (res + helper(n, i, &visit, [Int]())) % Int(mode)
+        }
+        return res
+    }
+    private func helper(_ n: Int, _ i: Int, _ visit: inout [[Int]], _ sub: [Int]) -> Int {
+        if n == 1 { return 1 }
+        if visit[n][i] != -1 { return visit[n][i] }
+        var sum = 0
+        moves[i].forEach({
+            sum = (sum + helper(n-1, $0, &visit, [i, $0])) % Int(mode)
+        })
+        visit[n][i] = sum
+        return sum
+    }
+}
+```
+
+### Description
+
 <div><p>The chess knight has a <strong>unique movement</strong>,&nbsp;it may move two squares vertically and one square horizontally, or two squares horizontally and one square vertically (with both forming the shape of an <strong>L</strong>). The possible movements of chess knight are shown in this diagaram:</p>
 
 <p>A chess knight can move as indicated in the chess diagram below:</p>
