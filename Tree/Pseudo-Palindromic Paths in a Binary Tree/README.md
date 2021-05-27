@@ -1,5 +1,36 @@
 # [1457. Pseudo-Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree)
 
+### Solution
+```swift
+class Solution {
+    func pseudoPalindromicPaths (_ root: TreeNode?) -> Int {
+        return calculate(root, Set())
+    }
+    
+    private func calculate(_ node: TreeNode?, _ set: Set<Int>) -> Int {
+        guard let node = node else { return 0 }
+        var newSet = set
+        if set.contains(node.val) {
+            newSet.remove(node.val)
+        } else {
+            newSet.insert(node.val)
+        }
+        switch (node.left, node.right) {
+        case let (left?,right?):
+            return calculate(left, newSet) + calculate(right, newSet)
+        case let (left?, nil):
+            return calculate(left, newSet)
+        case let (nil, right?):
+            return calculate(right, newSet)
+        case (nil, nil):
+            return newSet.count <= 1 ? 1 : 0
+        }
+    }
+}
+```
+
+### Description
+
 <div><p>Given a binary tree where node values are digits from 1 to 9. A path in the binary tree is said to be <strong>pseudo-palindromic</strong> if at least one permutation of the node values in the path is a palindrome.</p>
 
 <p><em>Return the number of <strong>pseudo-palindromic</strong> paths going from the root node to leaf nodes.</em></p>
