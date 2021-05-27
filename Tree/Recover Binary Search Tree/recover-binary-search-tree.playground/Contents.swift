@@ -3,9 +3,7 @@ import Foundation
 // https://leetcode.com/problems/recover-binary-search-tree
 
 class Solution {
-    
     var left: TreeNode?, right: TreeNode?, prev: TreeNode?
-    
     func recoverTree(_ root: TreeNode?) {
         bfs(root)
         if let l = left, let r = right {
@@ -14,15 +12,12 @@ class Solution {
             r.val = temp
         }
     }
-    
     private func bfs(_ node: TreeNode?) {
         guard let node = node else { return }
         bfs(node.left)
-        
         if left == nil, let prev = prev, prev.val > node.val {
             left = prev
         }
-        
         if left != nil {
             if right == nil {
                 right = node
@@ -30,7 +25,6 @@ class Solution {
                 right = node
             }
         }
-        
         prev = node
         bfs(node.right)
     }

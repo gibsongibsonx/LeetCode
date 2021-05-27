@@ -1,5 +1,38 @@
 # [99. Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree)
 
+### Solution
+```swift
+class Solution {
+    var left: TreeNode?, right: TreeNode?, prev: TreeNode?
+    func recoverTree(_ root: TreeNode?) {
+        bfs(root)
+        if let l = left, let r = right {
+            let temp = l.val
+            l.val = r.val
+            r.val = temp
+        }
+    }
+    private func bfs(_ node: TreeNode?) {
+        guard let node = node else { return }
+        bfs(node.left)
+        if left == nil, let prev = prev, prev.val > node.val {
+            left = prev
+        }
+        if left != nil {
+            if right == nil {
+                right = node
+            } else if node.val < right!.val {
+                right = node
+            }
+        }
+        prev = node
+        bfs(node.right)
+    }
+}
+```
+
+### Description
+
 <div><p>You are given the <code>root</code> of a binary search tree (BST), where exactly two nodes of the tree were swapped by mistake. <em>Recover the tree without changing its structure</em>.</p>
 
 <p><strong>Follow up:</strong> A solution using <code>O(n)</code> space is pretty straight forward. Could you devise a constant space solution?</p>
