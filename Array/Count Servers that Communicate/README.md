@@ -1,5 +1,37 @@
 # [1267. Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate)
 
+### Solution
+```swift
+class Solution {
+    func countServers(_ grid: [[Int]]) -> Int {
+        var rows = Array(repeating: 0, count: grid.count)
+        var cols = Array(repeating: 0, count: grid[0].count)
+        var servers = 0
+        for i in 0..<grid.count {
+            for j in 0..<grid[0].count {
+                if grid[i][j] == 1 {
+                    rows[i] += 1
+                    cols[j] += 1
+                    servers += 1
+                }
+            }
+        }
+        
+        for i in 0..<grid.count {
+            for j in 0..<grid[0].count {
+                if grid[i][j] == 1 && rows[i] == 1 && cols[j] == 1 {
+                    servers -= 1
+                    break
+                }
+            }
+        }
+        return servers
+    }
+}
+```
+
+### Description
+
 <div><p>You are given a map of a server center, represented as a <code>m * n</code> integer matrix&nbsp;<code>grid</code>, where 1 means that on that cell there is a server and 0 means that it is no server. Two servers are said to communicate if they are on the same row or on the same column.<br>
 <br>
 Return the number of servers&nbsp;that communicate with any other server.</p>
