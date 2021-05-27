@@ -1,5 +1,31 @@
 # [920. Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists)
 
+### Solution:
+```swift
+class Solution {
+    func numMusicPlaylists(_ n: Int, _ goal: Int, _ k: Int) -> Int {
+        let mod = Int(1e9 + 7)
+        
+        // songs "n" to form the "goal' playlist
+        var dp = [[Int]](repeating: .init(repeating: 0, count: goal + 1), count: n + 1)
+        dp[0][0] = 1
+        
+        for l in 1...goal {
+            for s in 1...min(n, l) {
+                // new song
+                dp[s][l] = dp[s - 1][l - 1] * (n - (s - 1))
+                // adding old songs, even though "k" should not be selected
+                dp[s][l] += dp[s][l - 1] * max(s - k, 0) % mod
+                dp[s][l] %= mod
+            }
+        }
+        return dp[n][goal]
+    }
+}
+```
+
+### Description:
+
 <div><p>Your music player contains <code>n</code>&nbsp;different songs and she wants to listen to <code>goal</code><strong> </strong>(not necessarily different) songs during your trip. &nbsp;You&nbsp;create&nbsp;a playlist so&nbsp;that:</p>
 
 <ul>
