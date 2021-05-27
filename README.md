@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com/asahiocean)
 
-![](https://i.ibb.co/mJ2y6CB/problem100-transparent.png)
+![](https://i.ibb.co/s9xQFWv/problems100.png)
 
 <hr>
 
