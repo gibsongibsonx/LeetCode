@@ -1,6 +1,6 @@
 import Foundation
 
-// https://leetcode.com/problems/3sum/
+// https://leetcode.com/problems/3sum
 
 class Solution {
     func threeSum(_ nums: [Int]) -> [[Int]] {
