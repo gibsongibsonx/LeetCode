@@ -1,5 +1,7 @@
 import Foundation
 
+// https://leetcode.com/problems/letter-combinations-of-a-phone-number
+
 class Solution {
     func letterCombinations(_ digits: String) -> [String] {
         let matrix: [Character:[Character]] = ["2":Array<Character>("abc"),
