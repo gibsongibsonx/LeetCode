@@ -19,6 +19,20 @@ class Solution {
 
 import XCTest
 
+// Executed 3 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
+// In the examples for the task the values seem to have been rounded up
+
 class Tests: XCTestCase {
-    
+    private let s = Solution()
+    func test1() {
+        XCTAssertEqual(s.new21Game(10, 1, 10), 0.9999999999999999) // 1.00000
+    }
+    func test2() {
+        XCTAssertEqual(s.new21Game(6, 1, 10), 0.60000)
+    }
+    func test3() {
+        XCTAssertEqual(s.new21Game(21, 17, 10), 0.7327777870686082) // 0.73278
+    }
 }
+
+Tests.defaultTestSuite.run()
