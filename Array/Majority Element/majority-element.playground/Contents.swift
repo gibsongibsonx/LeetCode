@@ -12,3 +12,19 @@ class Solution {
         return candidate
     }
 }
+
+import XCTest
+
+//      Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    func test1() {
+        XCTAssertEqual(s.majorityElement([3,2,3]), 3)
+    }
+    func test2() {
+        XCTAssertEqual(s.majorityElement([2,2,1,1,1,2,2]), 2)
+    }
+}
+
+Tests.defaultTestSuite.run()
