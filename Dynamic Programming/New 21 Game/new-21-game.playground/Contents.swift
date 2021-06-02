@@ -16,3 +16,9 @@ class Solution {
         return result
     }
 }
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+}
