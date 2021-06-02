@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 // https://leetcode.com/problems/new-21-game
 
