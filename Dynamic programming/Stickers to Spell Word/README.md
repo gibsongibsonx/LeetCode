@@ -1,4 +1,4 @@
-# [691. Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word/)
+# [691. Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word)
 
 <div><p>We are given <code>n</code> different types of <code>stickers</code>. Each sticker has a lowercase English word on it.</p>
 
