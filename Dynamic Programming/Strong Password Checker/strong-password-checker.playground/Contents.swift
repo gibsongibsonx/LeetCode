@@ -1,10 +1,6 @@
 import Foundation
 
-// https://leetcode.com/problems/strong-password-checker/
-// Status: Accepted
-// Runtime: 0 ms
-// Memory Usage: 14.6 MB
-
+// https://leetcode.com/problems/strong-password-checker
 // Discuss: https://leetcode.com/problems/strong-password-checker/discuss/1146420/Swift%3A-Strong-Password-Checker
 
 class Solution {
