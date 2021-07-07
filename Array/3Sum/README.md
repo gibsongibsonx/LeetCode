@@ -1,4 +1,8 @@
-# [15. 3Sum](https://leetcode.com/problems/3sum)
+## 15. 3Sum
+
+#### [Gist with solution](https://gist.github.com/asahiocean/ad5b43fc2fefa424cbd627395fd3b157) • [Open Problem](https://leetcode.com/problems/3sum) • [Discuss](https://vk.cc/c3HVzi)
+
+-------
 
 Given an integer array nums, return all the triplets ```[nums[i], nums[j], nums[k]]``` such that ```i != j```, ```i != k```, and ```j != k```, and ```nums[i] + nums[j] + nums[k] == 0```.
 
