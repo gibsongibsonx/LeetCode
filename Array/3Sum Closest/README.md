@@ -1,29 +1,8 @@
-# [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
+## 16. 3Sum Closest
 
-### Solution:
-```swift
-class Solution {
-    func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
-        var nums = nums
-        nums.sort()
-        var diff = Int.max, res = 0
-        for i in 0..<nums.count - 2 {
-            var n = i + 1, q = nums.count - 1
-            while n < q {
-                let sum = nums[i] + nums[n] + nums[q]
-                sum > target ? q -= 1 : (n += 1)
-                if abs(sum - target) < diff {
-                    diff = abs(sum - target)
-                    res = sum
-                }
-            }
-        }
-        return res
-    }
-}
-```
+#### [Gist with solution](https://gist.github.com/asahiocean/9ab8db4edb63f74a77f177fbddee4cde) • [Open Problem](https://leetcode.com/problems/3sum-closest) • [Discuss](https://vk.cc/c3HTmo)
 
-### Description:
+-------
 
 Given an array ```nums``` of **n** integers and an integer ```target```, find three integers in ```nums``` such that the sum is closest to ```target```. Return the sum of the three integers. You may assume that each input would have exactly one solution.
 
