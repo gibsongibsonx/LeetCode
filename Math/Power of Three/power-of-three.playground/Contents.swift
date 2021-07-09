@@ -18,7 +18,7 @@ import XCTest
 
 class Tests: XCTestCase {
     private let s = Solution()
-    func test1() {
+    func test0() {
         XCTAssertEqual(s.isPowerOfThree(27), true)
     }
     func test2() {
