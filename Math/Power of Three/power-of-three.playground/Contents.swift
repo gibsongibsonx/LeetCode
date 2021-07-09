@@ -27,7 +27,7 @@ class Tests: XCTestCase {
     func test2() {
         XCTAssertEqual(s.isPowerOfThree(9), true)
     }
-    func test4() {
+    func test3() {
         XCTAssertEqual(s.isPowerOfThree(45), false)
     }
 }
