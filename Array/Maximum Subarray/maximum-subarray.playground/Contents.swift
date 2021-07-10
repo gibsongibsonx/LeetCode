@@ -1,6 +1,6 @@
 import Foundation
 
-// https://leetcode.com/problems/maximum-subarray
+// https://leetcode.com/problems/maximum-subarray/
 // Discuss: https://vk.cc/c3Gh0Q
 
 class Solution {
