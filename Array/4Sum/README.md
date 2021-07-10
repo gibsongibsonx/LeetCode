@@ -1,4 +1,4 @@
-# [18. 4Sum](https://leetcode.com/problems/4sum/)
+# [18. 4Sum](https://leetcode.com/problems/4sum)
 
 <div><p>Given an array <code>nums</code> of <code>n</code> integers, return <em>an array of all the <strong>unique</strong> quadruplets</em> <code>[nums[a], nums[b], nums[c], nums[d]]</code> such that:</p>
 
