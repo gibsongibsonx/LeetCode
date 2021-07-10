@@ -30,3 +30,25 @@ class Solution {
         return res
     }
 }
+
+import XCTest
+
+// Executed 3 tests, with 0 failures (0 unexpected) in 0.125 (0.127) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    func test1() {
+        let res = s.letterCombinations("23")
+        XCTAssertEqual(res, ["ad","bd","cd","ae","be","ce","af","bf","cf"])
+    }
+    func test2() {
+        let res = s.letterCombinations("")
+        XCTAssertEqual(res, [])
+    }
+    func test3() {
+        let res = s.letterCombinations("2")
+        XCTAssertEqual(res, ["a","b","c"])
+    }
+}
+
+Tests.defaultTestSuite.run()

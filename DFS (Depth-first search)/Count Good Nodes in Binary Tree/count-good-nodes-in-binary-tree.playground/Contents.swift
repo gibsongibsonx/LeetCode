@@ -1,6 +1,7 @@
 import Foundation
 
 // https://leetcode.com/problems/count-good-nodes-in-binary-tree
+// Discuss: https://vk.cc/c3EibC
 
 class Solution {
     private func dfs(_ root: TreeNode?, max num: Int) -> Int {

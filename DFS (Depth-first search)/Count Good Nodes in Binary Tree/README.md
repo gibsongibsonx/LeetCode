@@ -1,4 +1,8 @@
-# [1448. Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)
+## 1448. Count Good Nodes in Binary Tree
+
+#### [Gist with solution](https://gist.github.com/asahiocean/70fc52e4d51e4f3255292dd7c9cdf6d5) • [Open Problem](https://leetcode.com/problems/count-good-nodes-in-binary-tree) • [Discuss](https://vk.cc/c3EibC)
+
+-------
 
 Given a binary tree ```root```, a node X in the tree is named **good** if in the path from root to X there are no nodes with a value greater than X.
 
