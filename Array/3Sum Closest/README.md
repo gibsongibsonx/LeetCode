@@ -1,6 +1,6 @@
 ## 16. 3Sum Closest
 
-#### [Gist with solution](https://gist.github.com/asahiocean/9ab8db4edb63f74a77f177fbddee4cde) • [Open Problem](https://leetcode.com/problems/3sum-closest) • [Discuss](https://vk.cc/c3HTmo)
+### [Gist with solution](https://gist.github.com/asahiocean/9ab8db4edb63f74a77f177fbddee4cde) • [Open Problem](https://leetcode.com/problems/3sum-closest) • [Discuss](https://vk.cc/c3HTmo)
 
 -------
 
