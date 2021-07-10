@@ -1,6 +1,6 @@
 import Foundation
 
-// https://leetcode.com/problems/4sum/
+// https://leetcode.com/problems/4sum
 
 class Solution {
     func fourSum(_ nums: [Int], _ target: Int) -> [[Int]] {
