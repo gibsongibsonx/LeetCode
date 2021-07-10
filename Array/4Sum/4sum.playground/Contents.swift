@@ -35,10 +35,10 @@ import XCTest
 class Tests: XCTestCase {
     private let s = Solution()
     func testExample1() {
-        XCTAssertEqual(s.fourSum([1,0,-1,0,-2,2], 0), [[1,2,-2,-1],[0,2,-2,0],[0,1,-1,0]]) // success
+        XCTAssertEqual(s.fourSum([1,0,-1,0,-2,2], 0), [[1,2,-2,-1],[0,2,-2,0],[0,1,-1,0]])
     }
     func testExample2() {
-        XCTAssertEqual(s.fourSum([2,2,2,2,2], 8), [[2,2,2,2]]) // success
+        XCTAssertEqual(s.fourSum([2,2,2,2,2], 8), [[2,2,2,2]])
     }
 }
 
