@@ -6,23 +6,21 @@ import Foundation
 
 class Solution {
     func threeSum(_ nums: [Int]) -> [[Int]] {
-        guard nums.count >= 3 else { return .init() }
+        guard nums.count >= 3 else { return [[Int]]() }
         var result = [[Int]]()
         let nums = nums.sorted()
         
         for i in 0..<nums.count {
             if i > 0 && nums[i] == nums[i-1] { continue }
-            
             let num = 0 - nums[i]
             var n = i + 1, c = nums.count - 1
             
             while n < c {
-                let sum = nums[n] + nums[c]
+                let nn = nums[n], nc = nums[c]
+                let sum = nn + nc
                 if sum == num {
-                    result.append([nums[i], nums[n], nums[c]])
-                    
-                    n += 1; c -= 1
-                    
+                    result.append([nums[i], nn, nc])
+                    n += 1; c -= 1;
                     while n < c && nums[n] == nums[n-1] { n += 1 }
                     while n < c && nums[c] == nums[c+1] { c -= 1 }
                 } else {
@@ -41,16 +39,17 @@ import XCTest
 class Tests: XCTestCase {
     private let s = Solution()
     
-    func testExample1() {
-        XCTAssert(s.threeSum([-1,0,1,2,-1,-4]) == [[-1,-1,2],[-1,0,1]])
+    func test0() {
+        let res = s.threeSum([-1,0,1,2,-1,-4])
+        XCTAssertEqual(res, [[-1,-1,2],[-1,0,1]])
     }
-    
-    func testExample2() {
-        XCTAssert(s.threeSum([]) == [])
+    func test1() {
+        let res = s.threeSum([])
+        XCTAssertEqual(res, [])
     }
-    
-    func testExample3() {
-        XCTAssert(s.threeSum([0]) == [])
+    func test2() {
+        let res = s.threeSum([0])
+        XCTAssertEqual(res, [])
     }
 }
 
