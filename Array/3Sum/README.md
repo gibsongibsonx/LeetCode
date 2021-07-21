@@ -1,6 +1,6 @@
 ## 15. 3Sum
 
-### [Gist with solution](https://gist.github.com/asahiocean/ad5b43fc2fefa424cbd627395fd3b157) • [Open Problem](https://leetcode.com/problems/3sum) • [Discuss](https://vk.cc/c3HVzi)
+### [Open Problem](https://leetcode.com/problems/3sum) • [Discuss](https://vk.cc/c3HVzi) • [Gist with solution](https://gist.github.com/asahiocean/ad5b43fc2fefa424cbd627395fd3b157)
 
 -------
 
