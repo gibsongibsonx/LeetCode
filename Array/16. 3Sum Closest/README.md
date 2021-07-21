@@ -1,8 +1,15 @@
 ## 16. 3Sum Closest
 
-### [Gist with solution](https://gist.github.com/asahiocean/9ab8db4edb63f74a77f177fbddee4cde) • [Open Problem](https://leetcode.com/problems/3sum-closest) • [Discuss](https://vk.cc/c3HTmo)
+<div id="buttons" class="buttons" align="left" style="vertical-align: middle; align-items: center;">
+<!-- TO PROBLEM -->
+<a href="https://leetcode.com/problems/3sum-closest"><img style="vspace="0"; hspace="0"; border="0";" src="https://github.com/asahiocean/asahiocean.github.io/blob/master/helpers/images/gif/leetcode/toproblem.gif" alt="To problem" width="128px" align="center"/></a>
+<!-- DISCUSS -->
+<a href="https://vk.cc/c3HTmo"><img style="vspace="0"; hspace="5"; border="0";" src="https://github.com/asahiocean/asahiocean.github.io/blob/master/helpers/images/gif/leetcode/discuss.gif" alt="Leetcode Discuss" width="128px" align="center"/></a>
+<!-- SOLUTION -->
+<a href="https://gist.github.com/asahiocean/9ab8db4edb63f74a77f177fbddee4cde"><img style="vspace="0" hspace="0" border="0";" src="https://github.com/asahiocean/asahiocean.github.io/blob/master/helpers/images/gif/leetcode/solution.gif" alt="Solution" width="128px" align="center"/></a>
+</div>
 
--------
+### Description:
 
 Given an array ```nums``` of **n** integers and an integer ```target```, find three integers in ```nums``` such that the sum is closest to ```target```. Return the sum of the three integers. You may assume that each input would have exactly one solution.
 
