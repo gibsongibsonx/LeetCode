@@ -43,19 +43,19 @@ import XCTest
 class Tests: XCTestCase {
     private let s = Solution()
     func testExample1() {
-        XCTAssertEqual(s.avoidFlood([1,2,3,4]), [-1,-1,-1,-1]) // success
+        XCTAssertEqual(s.avoidFlood([1,2,3,4]), [-1,-1,-1,-1])
     }
     func testExample2() {
-        XCTAssertEqual(s.avoidFlood([1,2,0,0,2,1]), [-1,-1,2,1,-1,-1]) // success
+        XCTAssertEqual(s.avoidFlood([1,2,0,0,2,1]), [-1,-1,2,1,-1,-1])
     }
     func testExample3() {
-        XCTAssertEqual(s.avoidFlood([1,2,0,1,2]), []) // success
+        XCTAssertEqual(s.avoidFlood([1,2,0,1,2]), [])
     }
     func testExample4() {
-        XCTAssertEqual(s.avoidFlood([69,0,0,0,69]), [-1,69,1,1,-1]) // success
+        XCTAssertEqual(s.avoidFlood([69,0,0,0,69]), [-1,69,1,1,-1])
     }
     func testExample5() {
-        XCTAssertEqual(s.avoidFlood([10,20,20]), []) // success
+        XCTAssertEqual(s.avoidFlood([10,20,20]), [])
     }
 }
 
