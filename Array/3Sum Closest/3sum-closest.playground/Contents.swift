@@ -1,5 +1,6 @@
 import Foundation
 
+// 16. 3Sum Closest
 // https://leetcode.com/problems/3sum-closest
 // Discuss: https://vk.cc/c3HTmo
 
@@ -13,10 +14,8 @@ class Solution {
             while n < q {
                 let sum = nums[i] + nums[n] + nums[q]
                 sum > target ? q -= 1 : (n += 1)
-                if abs(sum - target) < diff {
-                    diff = abs(sum - target)
-                    res = sum
-                }
+                let val =  abs(sum - target)
+                if val < diff { diff = val; res = sum }
             }
         }
         return res
@@ -29,8 +28,7 @@ import XCTest
 
 class Tests: XCTestCase {
     private let s = Solution()
-    
-    func testExample1() {
+    func test() {
         XCTAssert(s.threeSumClosest([-1,2,1,-4], 1) == 2) // success
     }
 }
