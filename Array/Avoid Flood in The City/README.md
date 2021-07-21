@@ -1,6 +1,6 @@
 ## 1488. Avoid Flood in The City
 
-### [Gist with solution](https://gist.github.com/asahiocean/60869ea4465a3557f844f26d96f3b011) • [Open Problem](https://leetcode.com/problems/avoid-flood-in-the-city/) • [Discuss](https://vk.cc/c4akh5)
+### [Open Problem](https://leetcode.com/problems/avoid-flood-in-the-city/) • [Discuss](https://vk.cc/c4akh5) • [Gist with solution](https://gist.github.com/asahiocean/60869ea4465a3557f844f26d96f3b011)
 
 -------
 
