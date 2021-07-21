@@ -1,8 +1,14 @@
 ## 1488. Avoid Flood in The City
 
-### [Gist with solution](https://gist.github.com/asahiocean/60869ea4465a3557f844f26d96f3b011) • [Open Problem](https://leetcode.com/problems/avoid-flood-in-the-city/) • [Discuss](https://vk.cc/c4akh5)
+
+
+### [Open Problem](https://leetcode.com/problems/avoid-flood-in-the-city/) • [Discuss](https://vk.cc/c4akh5) • [Gist with solution](https://gist.github.com/asahiocean/60869ea4465a3557f844f26d96f3b011)
+
+
 
 -------
+
+
 
 <div><p>Your country has an infinite number of lakes. Initially, all the lakes are empty, but when it rains over the <code>nth</code> lake, the <code>nth</code> lake becomes full of water. If it rains over a lake which is <strong>full of water</strong>, there will be a <strong>flood</strong>. Your goal is to avoid the flood in any lake.</p>
 
