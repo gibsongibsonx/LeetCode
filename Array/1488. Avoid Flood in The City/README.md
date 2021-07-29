@@ -2,7 +2,7 @@
 
 ### [Open](https://leetcode.com/problems/avoid-flood-in-the-city/) • [Discuss](https://leetcode.com/problems/avoid-flood-in-the-city/discuss/1165465/Swift%3A-Avoid-Flood-in-The-City) • [Solution](https://gist.github.com/asahiocean/60869ea4465a3557f844f26d96f3b011)
 
--------
+## Description:
 
 <div><p>Your country has an infinite number of lakes. Initially, all the lakes are empty, but when it rains over the <code>nth</code> lake, the <code>nth</code> lake becomes full of water. If it rains over a lake which is <strong>full of water</strong>, there will be a <strong>flood</strong>. Your goal is to avoid the flood in any lake.</p>
 
