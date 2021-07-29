@@ -2,7 +2,6 @@ import Foundation
 
 // 1488. Avoid Flood in The City
 // https://leetcode.com/problems/avoid-flood-in-the-city/
-// Discuss: https://vk.cc/c4akh5
 
 class Solution {
     func avoidFlood(_ rains: [Int]) -> [Int] {
