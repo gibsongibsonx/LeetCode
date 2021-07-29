@@ -1,6 +1,6 @@
-## 18. 4Sum
+## [18. 4Sum](https://leetcode.com/problems/4sum)
 
-### [Open Problem](https://leetcode.com/problems/4sum) • [Discuss](https://leetcode.com/problems/4sum/discuss/1328067/Swift%3A-4Sum-(%2B-Test-Cases)) • [Gist with solution](https://gist.github.com/asahiocean/40a69bd76ad1e38384d1cb63a2c0ba4c)
+### [Open](https://leetcode.com/problems/4sum) • [Discuss](https://leetcode.com/problems/4sum/discuss/1328067/Swift%3A-4Sum-(%2B-Test-Cases)) • [Solution](https://gist.github.com/asahiocean/40a69bd76ad1e38384d1cb63a2c0ba4c)
 
 ---
 
