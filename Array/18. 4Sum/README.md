@@ -2,7 +2,7 @@
 
 ### [Open](https://leetcode.com/problems/4sum) • [Discuss](https://leetcode.com/problems/4sum/discuss/1328067/Swift%3A-4Sum-(%2B-Test-Cases)) • [Solution](https://gist.github.com/asahiocean/40a69bd76ad1e38384d1cb63a2c0ba4c)
 
----
+## Description:
 
 <div><p>Given an array <code>nums</code> of <code>n</code> integers, return <em>an array of all the <strong>unique</strong> quadruplets</em> <code>[nums[a], nums[b], nums[c], nums[d]]</code> such that:</p>
 
