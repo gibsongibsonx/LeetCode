@@ -1,5 +1,6 @@
 import Foundation
 
+// 121. Best Time to Buy and Sell Stock
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 class Solution {
@@ -16,14 +17,14 @@ class Solution {
 
 import XCTest
 
-//      Executed 2 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
+// Executed 2 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
 
 class Tests: XCTestCase {
     private let s = Solution()
-    func test1() {
+    func test0() {
         XCTAssertEqual(s.maxProfit([7,1,5,3,6,4]), 5)
     }
-    func test2() {
+    func test1() {
         XCTAssertEqual(s.maxProfit([7,6,4,3,1]), 0)
     }
 }
