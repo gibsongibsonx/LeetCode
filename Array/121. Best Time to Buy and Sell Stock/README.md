@@ -1,6 +1,6 @@
 ## 121. Best Time to Buy and Sell Stock
 
-### [Open Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) • [Discuss](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/discuss/1370459/Swift%3A-Best-Time-to-Buy-and-Sell-Stock-(%2B-Test-Cases))
+### [Open Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) • [Discuss](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/discuss/1370459/Swift%3A-Best-Time-to-Buy-and-Sell-Stock-(%2B-Test-Cases)) • [Gist with solution](https://gist.github.com/asahiocean/71a547a3d7a379a5005772a84890f2d1)
 
 <div><p>You are given an array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i<sup>th</sup></code> day.</p>
 
