@@ -9,7 +9,7 @@
 <a href="https://gist.github.com/asahiocean/9ab8db4edb63f74a77f177fbddee4cde"><img style="vspace="0" hspace="0" border="0";" src="https://github.com/asahiocean/asahiocean.github.io/blob/master/helpers/images/gif/leetcode/solution.gif" alt="Solution" width="128px" align="center"/></a>
 </div>
 
-### Description:
+## Description:
 
 Given an array ```nums``` of **n** integers and an integer ```target```, find three integers in ```nums``` such that the sum is closest to ```target```. Return the sum of the three integers. You may assume that each input would have exactly one solution.
 
