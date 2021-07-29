@@ -1,5 +1,6 @@
 import Foundation
 
+// 18. 4Sum
 // https://leetcode.com/problems/4sum
 
 class Solution {
@@ -34,10 +35,10 @@ import XCTest
 
 class Tests: XCTestCase {
     private let s = Solution()
-    func testExample1() {
+    func test0() {
         XCTAssertEqual(s.fourSum([1,0,-1,0,-2,2], 0), [[1,2,-2,-1],[0,2,-2,0],[0,1,-1,0]])
     }
-    func testExample2() {
+    func test1() {
         XCTAssertEqual(s.fourSum([2,2,2,2,2], 8), [[2,2,2,2]])
     }
 }
